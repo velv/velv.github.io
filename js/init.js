@@ -4,7 +4,6 @@ $(window).load(function(){
  $.when( effect() ).done(function() {
  	 $('.fade').removeClass('out');
  	$('.loader').remove();});});
-$(document).ready(function()
-{
-
+$(document).ready(function(){
+	
 });
