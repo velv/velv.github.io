@@ -28,26 +28,7 @@ body {
   opacity: 0;
 }
 
-.conten{
-position:relative;padding: 10% 0 0;
-}
-h1, h3{
-color: white;
-  font-weight: 800;
-  letter-spacing: 0.075em;
-  line-height: 1em;
- 
-  text-transform: uppercase;
-}
-h3{
-cursor: default;
-font-size: 1.2em;}
-a:focus,
-a:hover{
-text-decoration: none;
-}
-.iconki{
-font-size: 1.9em;}
+
 .moe {
   display: table;
   width: 100%;
@@ -56,34 +37,7 @@ font-size: 1.9em;}
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 		  }
-		  
-   h1{
-  padding-bottom: 8%;
-  color: white;
-  font-size: 3.4em;
-  }
-  
-	.myname hr.grow{
-	width: 1.5em;
-    border: none; /* Убираем границу */
-    background-color: white; /* Цвет линии */
-    color: white; /* Цвет линии для IE6-7 */
-    height: 2px; /* Толщина линии */
-	-webkit-transition: width 1s ease-out; 
-	-moz-transition: width 1s ease-out;
-    transition: width 1s  ease-out;
-	-o-transition: width 1s  ease-out;
-   }
-   
-   @media (max-width: 768px) {
-   .conten{position:relative;padding: 3% 0 0;}
-  h1{padding-bottom: 2%;font-size:2em;}
-}
-
-.myname:hover{cursor:pointer;}
-.myname:hover hr.grow{
- width: 5.0em;
-}
+	
 .loader {
 	display:block;
 	background-color: black;
@@ -94,3 +48,174 @@ font-size: 1.9em;}
 	position: fixed;
  z-index: 50;
 }
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Roboto:300,400');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	--main-color: #000000;
+	--secondary-color: #000000;
+	--btn: #FDFFFC;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.user__card {
+	min-width: 25em; /* 400px */
+	height: 37.5em; /* 600px */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 10px; /* 20px */
+	transform: translate(-50%, -50%);
+}
+.bg {
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	background-color: #000000;
+	position: relative;
+}
+.bg .perfil {
+	display: inline-block;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	position: relative;
+  background: #000000;
+	border: 4px solid var(--main-color);
+	top: 50px;
+	overflow: hidden;
+	z-index: 10;
+}
+.bg .perfil i {
+  padding-top: 13px;
+  color: #fff;
+  font-size: 10.7em;
+  transition: all .25s ease;
+}
+.bg .perfil::after {
+	content: "";
+	width: 35px;
+	height: 100%;
+	background: rgba(255,255,255,0.35);
+	position: absolute;
+	right: -50%;
+	top: 0;
+	transform: skewX(45deg);
+	transition: all 0.35s linear;
+}
+
+.user__card .bg .perfil i:hover {
+	transform: scale(1.2);
+  transition: all .25s ease;
+}
+
+.main__content {
+	width: 100%;
+	height: 70%;
+	color: #fff;
+	position: relative;
+	left: 0;
+	overflow: hidden;
+}
+.upper__card,
+.down__card {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	left: 0;
+}
+.upper__card {
+	background: var(--main-color);
+	z-index: 2;
+}
+.upper__card::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	right: -200px;
+	border-bottom: 420px solid var(--main-color);
+	border-right: 200px solid transparent;
+}
+.info,
+.social {
+	margin: 0 auto;
+	width: 80%;
+	height: 50%;
+}
+.info {
+	padding-top: 70px;
+	text-align: center;
+	border-bottom: 1px solid rgba(255,255,255,0.75);
+}
+.info h3 {
+	font-size: 3.4em;
+	margin-bottom: 8px;
+}
+.info p:nth-child(2) {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+}
+.info p:nth-child(3) {
+	font-size: 1.2em;
+}
+.followers {
+  padding-top: 80px;
+	height: 80%;
+  text-align: center;
+}
+
+.followers p {
+	font-size: 2.1em;
+}
+
+.down__card {
+	padding-top: 70px;
+	background: var(--secondary-color);
+	z-index: 1;
+}
+.down__card .bio {
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+}
+.down__card .bio h3 {
+	margin: 12px 0;
+	text-align: center;
+  color: white;
+	font-family: 'Roboto', sans-serif;
+}
+.down__card .bio p {
+	text-align: center;
+}
+.down__card .bio p:nth-child(5) {
+	margin: 15px 0;
+	padding: 15px;
+}
+.down__card .bio p:nth-child(5) a {
+	font-size: 1.2em;
+	padding: 15px;
+}
+.down__card .bio p:nth-child(6) {
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
