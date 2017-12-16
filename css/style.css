@@ -95,7 +95,7 @@ font-size: 1.9em;}
  z-index: 50;
 }
 a:-webkit-any-link {
-  color: -webkit-link;
+  color: -webkit-link !important; 
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
