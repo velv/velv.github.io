@@ -94,3 +94,8 @@ font-size: 1.9em;}
 	position: fixed;
  z-index: 50;
 }
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
