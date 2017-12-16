@@ -58,6 +58,7 @@ font-size: 1.9em;}
 		  }
 		  
    h1{
+  cursor: default;
   padding-bottom: 8%;
   color: white;
   font-size: 3.4em;
