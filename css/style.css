@@ -82,7 +82,7 @@ font-size: 1.9em;}
   h1{padding-bottom: 2%;font-size:2.8em;}
 }
 
-.myname:hover{cursor:pointer;}
+.myname:hover{cursor:default;}
 .myname:hover hr.grow{
  width: 5.0em;
 }
