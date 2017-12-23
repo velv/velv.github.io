@@ -58,7 +58,7 @@ font-size: 1.9em;}
 		  }
 		  
    h1{
-  cursor: pointer;
+  cursor: default;
   padding-bottom: 8%;
   color: white;
   font-size: 3.4em;
@@ -84,6 +84,7 @@ font-size: 1.9em;}
 
 .myname:hover{cursor:default;}
 .myname:hover hr.grow{
+cursor:default;
  width: 5.0em;
 }
 .loader {
